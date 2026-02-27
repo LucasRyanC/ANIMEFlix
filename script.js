@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
   loadHero();
 });
 
-// Busca e Alternância de Telas
 let searchTimeout;
 searchInput.addEventListener("input", (e) => {
   const query = e.target.value;
@@ -27,14 +26,14 @@ searchInput.addEventListener("input", (e) => {
 async function performSearch(query) {
   homeContent.classList.add("hidden");
   searchSection.classList.remove("hidden");
-  resultsGrid.innerHTML = "<p>Buscando...</p>";
+  resultsGrid.innerHTML = "<p>Searching...</p>";
 
   try {
     const response = await fetch(`${API_URL}/anime?q=${query}&limit=20`);
     const { data } = await response.json();
 
     if (data.length === 0) {
-      resultsGrid.innerHTML = "<p>Nenhum anime encontrado.</p>";
+      resultsGrid.innerHTML = "<p>No anime found.</p>";
       return;
     }
 
