@@ -21,7 +21,7 @@ Dica: Tire um print da tela principal e coloque aqui.
 
 | Home Screen | Anime Details |
 | :---: | :---: |
-| <img src="HomePage.png" width="450px" /> | <img src="AnimeDetails.png" width="450px" /> |
+| <img src="assets/HomePage.png" width="450px" /> | <img src="assets/AnimeDetails.png" width="450px" /> |
 
 ---
 
