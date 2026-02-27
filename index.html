@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AnimeFlix | Lucas Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo" onclick="resetHome()" style="cursor: pointer">
+        ANIME<span>FLIX</span>
+      </div>
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Títulos, personagens..."
+        />
+      </div>
+    </header>
+
+    <div id="homeContent">
+      <section class="hero" id="hero">
+        <div class="hero-content" id="heroContent"></div>
+      </section>
+
+      <main class="catalog">
+        <div class="row">
+          <h2>Em Alta</h2>
+          <div class="slider-wrapper">
+            <button class="handle handlePrev" onclick="moveSlider(this, -1)">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="container" id="trending-row"></div>
+            <button class="handle handleNext" onclick="moveSlider(this, 1)">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2>Novidades</h2>
+          <div class="slider-wrapper">
+            <button class="handle handlePrev" onclick="moveSlider(this, -1)">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="container" id="new-row"></div>
+            <button class="handle handleNext" onclick="moveSlider(this, 1)">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <section id="searchResultsSection" class="search-results hidden">
+      <h2 id="searchTitle">Resultados da Pesquisa</h2>
+      <div class="grid-results" id="searchResultsGrid"></div>
+    </section>
+
+    <div id="animeModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div id="trailerContainer"></div>
+        <div class="modal-info">
+          <h2 id="modalTitle"></h2>
+          <p id="modalScore"></p>
+          <p id="modalSynopsis"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
