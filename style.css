@@ -1,5 +1,5 @@
 :root {
-  --main-bg: #141414;
+  --main-bg: #0c0101;
   --netflix-red: #e50914;
   --text-white: #ffffff;
 }
@@ -11,7 +11,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom, var(--main-bg), #000);
+  background-color: var(--main-bg);
   color: var(--text-white);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-x: hidden;
