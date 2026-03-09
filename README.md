@@ -16,8 +16,7 @@ https://lucasryanc.github.io/ANIMEFlix/
 
 ## 📸 Screenshots
 
-Aqui você deve colocar as imagens do seu site. 
-Dica: Tire um print da tela principal e coloque aqui.
+
 
 | Home Screen | Anime Details |
 | :---: | :---: |
